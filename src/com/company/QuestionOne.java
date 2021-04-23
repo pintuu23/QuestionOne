@@ -1,18 +1,16 @@
 package com.company;
- class QuestionOne {
+
+public class QuestionOne {
 
 
 
-
-    public static void main(String[] args) {
+    public void findDivisibleBy18(int i, int j, int k) {
 
         int a, b, c;
         int count = 0;
-        int i = 100;
-        while (i<=999) {
+        while (i<=j) {
 
             if (i % 18 == 0) {
-
 
                 int same = i;
                 a = same / 100;
@@ -21,9 +19,8 @@ package com.company;
                 same = (same - (b * 10));
                 c = same;
 
-
                 int sum = a + b + c;
-                if(sum==18 & a!=b & b!=c & c!=a) {
+                if(sum==k & a!=b & b!=c & c!=a) {
 
                     System.out.println(i);
                     System.out.println("number is divisible by 18");
